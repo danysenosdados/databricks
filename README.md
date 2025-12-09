@@ -62,35 +62,9 @@ Modo: <code>overwrite</code> com <code>overwriteSchema=true</code>
 
 <h3>Gold</h3>
 
-<p>A camada Gold refina e aplica regras de negócio específicas. Cada endpoint possui sua própria regra. A seguir, os scripts principais implementados:</p>
+<p>A camada Gold refina e aplica regras de negócio específicas. Cada endpoint possui sua própria regra. </p>
 
-<h4>1️⃣ gold.transferegov.plano_acao</h4>
 
-<p>
-Regras aplicadas:
-</p>
-
-<ul>
-  <li>Carregamento da tabela <code>silver.transferegov.plano_acao</code>.</li>
-  <li>Filtro de CNPJs autorizados</li>
-  <li>Persistência final em <code>gold.transferegov.plano_acao</code>.</li>
-</ul>
-
-<hr>
-
-<h4>2️⃣ gold.transferegov.programa_beneficiario</h4>
-
-<p>Mesma estrutura, porém aplicando o filtro sobre a coluna:</p>
-
-<pre><code>cnpj_beneficiario_programa</code></pre>
-
-<ul>
-  <li>Leitura da tabela Silver.</li>
-  <li>Aplicação da regra de CNPJs.</li>
-  <li>Escrita final em <code>gold.transferegov.programa_beneficiario</code>.</li>
-</ul>
-
-<hr>
 
 <h2>⚙️ Tecnologias Utilizadas</h2>
 

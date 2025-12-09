@@ -95,7 +95,7 @@ def infer_and_cast(df, sample_size=50):
             new_cols.append(F.expr(f"try_cast({c} as bigint)").alias(c))
         elif tipo == "double":
             # Substitui vírgula por ponto antes de tentar o cast para double
-            new_cols.append(F.regexp_replace(col, ",", ".").cast("double").alias(c))
+            new_cols.append(F.regexp_replace(col, ",", ".").cast("decimal(30, 2)").alias(c))
         elif tipo == "date":
             new_cols.append(F.to_date(col, "yyyy-MM-dd").alias(c))
         elif tipo == "timestamp":

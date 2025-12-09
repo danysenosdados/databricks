@@ -64,7 +64,11 @@ Modo: <code>overwrite</code> com <code>overwriteSchema=true</code>
 
 <p>A camada Gold refina e aplica regras de negócio específicas. Cada endpoint possui sua própria regra. </p>
 
-
+<ul>
+  <li>Filtragem seletiva de CNPJs para consumo analítico do estado de PE.</li>
+  <li>Organização dos dados no catálogo Gold com granularidade por endpoint.</li>
+  <li>Construção de tabelas prontas para BI, dashboards e análises avançadas.</li>
+</ul>
 
 <h2>⚙️ Tecnologias Utilizadas</h2>
 

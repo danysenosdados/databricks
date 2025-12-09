@@ -115,9 +115,6 @@ Regras aplicadas:
 
 /gold
   gold_<endpoint>.py
-
-/testes
-  notebooks auxiliares
 </pre>
 
 <hr>
